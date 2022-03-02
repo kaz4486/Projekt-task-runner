@@ -15,6 +15,9 @@ $color-two: #ffffff;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 17px;
+}
 body {
   margin: 0;
   font-size: 0.6rem;
@@ -268,5 +271,46 @@ img {
     margin: 0;
     background-color: black;
     display: flex;
+  }
+}
+
+@media (max-width: 960px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+
+  .splash {
+    height: 80vh;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  .element {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+  .splash {
+    height: 80vh;
   }
 }
