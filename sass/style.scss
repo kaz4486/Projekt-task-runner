@@ -5,7 +5,7 @@ $font-text: "Mulish", sans-serif;
 $font-logo: "Dancing Script", cursive;
 
 $color-one: #fde104;
-$color-two: #fcfcfb;
+$color-two: #ffffff;
 
 /* Global */
 
@@ -27,6 +27,47 @@ section {
   text-align: center;
 }
 
+.row {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-family: $font-header;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: $font-header;
+  margin: 8px auto;
+}
+
+h5 {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+p {
+  padding: 0 45px;
+  margin-top: 0;
+}
+h6 {
+  font-family: $font-header;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+
 /* Splash */
 
 .logo {
@@ -41,7 +82,7 @@ section {
     font-weight: 400;
   }
 }
-ul {
+.menu {
   flex-direction: row;
   display: flex;
   list-style-type: none;
@@ -140,35 +181,6 @@ ul {
 
 /* Services */
 
-h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 0;
-  font-weight: 700;
-  font-family: $font-header;
-}
-
-h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: $font-header;
-  margin: 8px auto;
-}
-
-h5 {
-  font-size: 0.8rem;
-  text-align: center;
-  font-weight: 300;
-  font-style: italic;
-  margin-bottom: 50px;
-  margin-top: 0;
-}
-p {
-  padding: 0 45px;
-  margin-top: 0;
-}
-
 .service {
   margin: 0 auto;
 
@@ -192,23 +204,13 @@ p {
 
 /* Portfolio */
 
+.portfolio {
+  background-color: #dcf0f1;
+}
 img {
   object-fit: cover;
   height: 400px;
   max-width: 100%;
-}
-
-.row {
-  margin-bottom: 30px;
-}
-
-h6 {
-  font-family: $font-header;
-  font-weight: 700;
-  font-size: 0.8rem;
-  margin: 0 auto;
-  letter-spacing: 0.05rem;
-  word-spacing: 0.1rem;
 }
 
 .card {
@@ -233,4 +235,38 @@ h6 {
 .card-image:hover {
   z-index: 1;
   cursor: pointer;
+}
+
+/* Footer */
+
+.social {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+
+  li {
+    font-size: 15px;
+    margin: 0 0.5rem;
+  }
+
+  i {
+    font-size: 15px;
+    color: $color-two;
+  }
+
+  a {
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    background-color: black;
+    display: flex;
+  }
 }
