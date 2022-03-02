@@ -5,7 +5,7 @@ $font-text: "Mulish", sans-serif;
 $font-logo: "Dancing Script", cursive;
 
 $color-one: #fde104;
-$color-two: #ffffff;
+$color-two: #fcfcfb;
 
 /* Global */
 
@@ -24,6 +24,7 @@ body {
 
 section {
   padding: 36px 0;
+  text-align: center;
 }
 
 /* Splash */
@@ -160,7 +161,8 @@ h5 {
   text-align: center;
   font-weight: 300;
   font-style: italic;
-  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 p {
   padding: 0 45px;
@@ -168,7 +170,7 @@ p {
 }
 
 .service {
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
 
   i {
     border: 2px solid $color-one;
@@ -186,4 +188,49 @@ p {
 
 .element {
   text-align: center;
+}
+
+/* Portfolio */
+
+img {
+  object-fit: cover;
+  height: 400px;
+  max-width: 100%;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+h6 {
+  font-family: $font-header;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+
+.card {
+  background-color: $color-two;
+  position: relative;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-image:hover::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  display: flex;
+  height: 400px;
+}
+
+.card-image:hover {
+  z-index: 1;
+  cursor: pointer;
 }
