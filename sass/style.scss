@@ -17,9 +17,13 @@ $color-two: #ffffff;
 
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: 0.6rem;
   line-height: 1.7;
   font-family: $font-text;
+}
+
+section {
+  padding: 36px 0;
 }
 
 /* Splash */
@@ -32,7 +36,7 @@ body {
     font-family: $font-logo;
     color: #edb814;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
   }
 }
@@ -131,4 +135,55 @@ ul {
   color: $color-one;
   background-color: $color-two;
   transition: all 0.5s;
+}
+
+/* Services */
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-family: $font-header;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: $font-header;
+  margin: 8px auto;
+}
+
+h5 {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0 auto;
+}
+p {
+  padding: 0 45px;
+  margin-top: 0;
+}
+
+.service {
+  margin: 50px auto 0 auto;
+
+  i {
+    border: 2px solid $color-one;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: $color-one;
+    margin: 0 auto;
+  }
+}
+
+.element {
+  text-align: center;
 }
